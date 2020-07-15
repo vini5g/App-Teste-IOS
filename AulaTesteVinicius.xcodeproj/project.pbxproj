@@ -13,6 +13,7 @@
 		DC8C5EAC24AD17AE00AE5E64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8C5EAA24AD17AE00AE5E64 /* Main.storyboard */; };
 		DC8C5EAE24AD17BB00AE5E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8C5EAD24AD17BB00AE5E64 /* Assets.xcassets */; };
 		DC8C5EB124AD17BB00AE5E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8C5EAF24AD17BB00AE5E64 /* LaunchScreen.storyboard */; };
+		DCE7BC2E24BF1F4F004494F0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE7BC2D24BF1F4F004494F0 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DC8C5EAD24AD17BB00AE5E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC8C5EB024AD17BB00AE5E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC8C5EB224AD17BB00AE5E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE7BC2D24BF1F4F004494F0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DC8C5EAF24AD17BB00AE5E64 /* LaunchScreen.storyboard */,
 				DC8C5EB224AD17BB00AE5E64 /* Info.plist */,
 				DC30ECFB24B65C63001AF0E4 /* PlanetaCell.swift */,
+				DCE7BC2D24BF1F4F004494F0 /* DetailViewController.swift */,
 			);
 			path = AulaTesteVinicius;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				DC8C5EA924AD17AE00AE5E64 /* ViewController.swift in Sources */,
 				DC8C5EA724AD17AE00AE5E64 /* AppDelegate.swift in Sources */,
 				DC30ECFC24B65C63001AF0E4 /* PlanetaCell.swift in Sources */,
+				DCE7BC2E24BF1F4F004494F0 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

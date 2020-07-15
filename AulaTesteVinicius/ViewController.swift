@@ -29,6 +29,15 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewController = segue.destination as! DetailViewController
+        let planeta = sender as! Planeta
+        
+        viewController.nome = planeta.nome
+        viewController.imagem = UIImage(named: planeta.imagem)
+        viewController.desc = planeta.descricao
+    }
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
@@ -38,11 +47,17 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PlanetaCell
+        
         cell.nomePlaneta.text = listaPlanetas[indexPath.row].nome
         cell.descricaoPlaneta.text = listaPlanetas[indexPath.row].descricao
         
         cell.imagemPlaneta.image = UIImage(named: listaPlanetas[indexPath.row].imagem)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let planeta = listaPlanetas[indexPath.row]
+        performSegue(withIdentifier: "Segue", sender: planeta)
     }
 }
 
